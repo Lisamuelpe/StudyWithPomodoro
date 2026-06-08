@@ -2,7 +2,57 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+    <!--Timer selectors pill navbar-->
+    <nav class="pill-navbar">
+        <ul class="">
+            <li class="nav-li">
+                <button class="nav-button" id="study-button">
+                    <i class="icon-book"></i>
+                    Study
+                </button>
+            </li>
+
+            <li class="nav-li">
+                <button class="nav-button" id="short-break-button">
+                    <i class="icon-hand1"></i>
+                    Short Break
+                </button>
+            </li>
+
+            <li class="nav-li">
+                <button class="nav-button" id="long-break-button">
+                    <i class="icon-hand2"></i>
+                    Long Break
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="timer-card">
+        <div>
+            <button id="button-add-widget">
+                <i class="icon-add"></i>
+            </button>
+        </div>
+
+
+        <div class="timer">
+            <svg class="svg-timer-circle">
+                <!--Circle for the timer-->
+            </svg>
+            <div class="timer-display">00:00</div>
+        </div>
+
+        <div class="Buttons">
+            <button class="timer-button" id="restart">
+                <i class="icon-restart"></i>
+                Restart
+            </button>
+
+            <button class="timer-button" id="start-stop">
+                <i class="icon-start"></i>
+                Start
+            </button>
+        </div>
+    </div>
