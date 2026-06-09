@@ -1,0 +1,10 @@
+﻿.timer-clock {
+    justify-items: center;
+    margin-bottom: 27px;
+}
+
+.timer-controllers {
+    display: flex;
+    gap: 169px;
+    height: 69px;
+}

@@ -1,0 +1,23 @@
+﻿main {
+    margin: 0px;
+    background-color: var(--primary-color);
+    padding-bottom: 3.438rem;
+}
+
+
+.pill-navbar {
+    justify-items:center;
+    width: 100%;
+    max-width: 594px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.timer-card{
+    justify-items:center;
+    padding: 1.563rem;
+}
+
+.timer-clock{
+    justify-items:center;
+    margin-bottom: 27px;
+}

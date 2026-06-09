@@ -1,0 +1,14 @@
+﻿.timer-button {
+    display: inline-block;
+    height: 4.313rem;
+    width: 207px;
+    max-width: 207px;
+    color: var(--primary-color);
+    border-radius: 48px;
+    font-size: 1.5rem;
+    font-family: roboto;
+    border: none;
+    box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+                0 8px 18px rgba(0, 0, 0, 0.22);
+    font-family: 'Roboto', sans-serif;
+}

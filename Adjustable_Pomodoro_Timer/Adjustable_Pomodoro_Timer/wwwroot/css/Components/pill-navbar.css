@@ -1,0 +1,25 @@
+﻿
+
+.pill-navbar .pill-navbar-list{
+     list-style: none;
+     display: flex;
+     gap: 4px;
+
+}
+
+.nav-button{
+    font-family:'Karantina', sans-serif;
+    color: var(--primary-color);
+}
+
+
+#study-button{
+}
+
+#short-break-button{
+
+}
+
+#long-break-button{
+
+}

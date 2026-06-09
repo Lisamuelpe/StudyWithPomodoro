@@ -3,56 +3,53 @@
 }
 
 
-    <!--Timer selectors pill navbar-->
-    <nav class="pill-navbar">
-        <ul class="">
-            <li class="nav-li">
-                <button class="nav-button" id="study-button">
-                    <i class="icon-book"></i>
-                    Study
-                </button>
-            </li>
-
-            <li class="nav-li">
-                <button class="nav-button" id="short-break-button">
-                    <i class="icon-hand1"></i>
-                    Short Break
-                </button>
-            </li>
-
-            <li class="nav-li">
-                <button class="nav-button" id="long-break-button">
-                    <i class="icon-hand2"></i>
-                    Long Break
-                </button>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="timer-card">
-        <div>
-            <button id="button-add-widget">
-                <i class="icon-add"></i>
+<!--Timer selectors pill navbar-->
+<nav class="pill-navbar glass">
+    <ul class="pill-navbar-list">
+        <li class="nav-li">
+            <button class="nav-button" id="study-button">
+                <i class="icon-book"></i>
+                Study
             </button>
-        </div>
+        </li>
 
-
-        <div class="timer">
-            <svg class="svg-timer-circle">
-                <!--Circle for the timer-->
-            </svg>
-            <div class="timer-display">00:00</div>
-        </div>
-
-        <div class="Buttons">
-            <button class="timer-button" id="restart">
-                <i class="icon-restart"></i>
-                Restart
+        <li class="nav-li">
+            <button class="nav-button" id="short-break-button">
+                <i class="icon-hand1"></i>
+                Short Break
             </button>
+        </li>
 
-            <button class="timer-button" id="start-stop">
-                <i class="icon-start"></i>
-                Start
+        <li class="nav-li">
+            <button class="nav-button" id="long-break-button">
+                <i class="icon-hand2"></i>
+                Long Break
             </button>
-        </div>
+        </li>
+    </ul>
+</nav>
+
+<section class="timer-card glass">
+    <button id="button-add-widget">
+        <i class="bi bi-arrow-clockwise"></i>
+    </button>
+
+    <div class="timer-clock">
+        <svg class="svg-timer-circle">
+            <!--Circle for the timer-->
+        </svg>
+        <div class="timer-display">00:00</div>
     </div>
+
+    <div class="timer-controllers">
+        <button class="timer-button" id="restart">
+            <i class="bi bi-arrow-clockwise"></i>
+            Restart
+        </button>
+
+        <button class="timer-button" id="start-stop">
+            <i class="bi bi-play-fill"></i>
+            Start
+        </button>
+    </div>
+</section>

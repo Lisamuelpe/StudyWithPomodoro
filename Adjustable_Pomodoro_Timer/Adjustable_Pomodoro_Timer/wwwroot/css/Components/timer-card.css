@@ -1,0 +1,9 @@
+﻿.timer-card {
+    justify-items: center
+}
+
+.timer-controllers {
+    display: flex;
+    gap: 169px;
+    height: 69px;
+}
