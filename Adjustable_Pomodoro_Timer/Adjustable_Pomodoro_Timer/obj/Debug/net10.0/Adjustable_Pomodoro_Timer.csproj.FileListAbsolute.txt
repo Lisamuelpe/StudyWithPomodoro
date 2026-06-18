@@ -97,10 +97,8 @@ C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Ti
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\Adjustable_Pomodoro_Timer.genruntimeconfig.cache
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\ref\Adjustable_Pomodoro_Timer.dll
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\rxvejrhmco-{0}-dyjx89twm7-dyjx89twm7.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\jzvsda6b47-{0}-af8pfcj9xl-af8pfcj9xl.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\y6m3e7l0sa-{0}-45nra0kjol-45nra0kjol.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\ao0qfot5v9-{0}-h0z0iuv4xc-h0z0iuv4xc.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\clxtcoqtm7-{0}-o8viddg80r-o8viddg80r.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\v2e1iyr1m4-{0}-zw6y2wx57k-zw6y2wx57k.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\h9ook966u9-{0}-ladf0iluad-ladf0iluad.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\1va17ukgly-{0}-0c1d32ph4u-0c1d32ph4u.gz
@@ -108,6 +106,9 @@ C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Ti
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\7mmkvvigeg-{0}-xfs7k3oo8a-xfs7k3oo8a.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\a6204n2owe-{0}-q2tl6m4akh-q2tl6m4akh.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\ea7d09ukw5-{0}-yl6vnqr56a-yl6vnqr56a.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\fz8y69u5bp-{0}-rpyag3qrq3-rpyag3qrq3.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\6el802lh9d-{0}-zs754es837-zs754es837.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\hhrsf0bujv-{0}-6c5m621cs5-6c5m621cs5.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\fz8y69u5bp-{0}-oylrgxlrtu-oylrgxlrtu.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\hhrsf0bujv-{0}-aocid8kdmv-aocid8kdmv.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\6el802lh9d-{0}-mvxthff7eb-mvxthff7eb.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\clxtcoqtm7-{0}-ndnwqnahgn-ndnwqnahgn.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\jzvsda6b47-{0}-jejgtt8qjc-jejgtt8qjc.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\8ujszsayex-{0}-231hmwy9j7-231hmwy9j7.gz

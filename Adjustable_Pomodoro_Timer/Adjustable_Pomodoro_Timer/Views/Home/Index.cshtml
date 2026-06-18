@@ -8,21 +8,21 @@
     <ul class="pill-navbar-list">
         <li class="nav-li">
             <button class="nav-button" id="study-button">
-                <i class="icon-book"></i>
+                <i class="bi bi-book"></i>
                 Study
             </button>
         </li>
 
         <li class="nav-li">
             <button class="nav-button" id="short-break-button">
-                <i class="icon-hand1"></i>
+                <i class="bi bi-slash-circle"></i>
                 Short Break
             </button>
         </li>
 
         <li class="nav-li">
             <button class="nav-button" id="long-break-button">
-                <i class="icon-hand2"></i>
+                <i class="bi bi-slash-circle-fill"></i>
                 Long Break
             </button>
         </li>
@@ -30,15 +30,31 @@
 </nav>
 
 <section class="timer-card glass">
-    <button id="button-add-widget">
-        <i class="bi bi-arrow-clockwise"></i>
+    <button id="button-add-widget" class="">
+        <i class="bi bi-plus-circle"></i>
     </button>
 
     <div class="timer-clock">
-        <svg class="svg-timer-circle">
-            <!--Circle for the timer-->
-        </svg>
-        <div class="timer-display">00:00</div>
+
+        <div class="skill">
+            <div class="outer">
+                <div class="inner">
+                    <div id="timer-time">
+                       00:00
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="351px" height="351px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle cx="175.5" cy="175.5" r="165.5" stroke-linecap="round" />
+            </svg>
+        </div>
+
     </div>
 
     <div class="timer-controllers">

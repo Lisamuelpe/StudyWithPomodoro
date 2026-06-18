@@ -1,0 +1,61 @@
+﻿.skill{
+    width: 351px;
+    height: 351px;
+    position: relative;
+}
+
+.outer {
+    width: 351px;
+    height: 351px;
+    border: 1px solid none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+
+.inner {
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+
+#timer-time {
+    font-weight: 600;
+    font-family: 'Karantina', sans-serif;
+    font-size: 128px;
+    color: var(--fontss);
+}
+
+svg{
+    position: absolute;
+    /* center the SVG over the circular .outer/.inner stack */
+    top: 50%;
+    left: 50%;
+    width: 351px;
+    height: 351px;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* keep the animated stroke above the white circle */
+    pointer-events: none;
+}
+circle {
+    fill: none;
+    stroke: var(--third-color);
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-dasharray: 1040;     
+    stroke-dashoffset: 1040;    
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
