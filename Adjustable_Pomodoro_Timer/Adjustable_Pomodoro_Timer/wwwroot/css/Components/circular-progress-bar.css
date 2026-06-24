@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     background-color: none;
+
 }
 
 .inner {
@@ -24,24 +25,18 @@
     justify-content: center;
     align-items: center;
     background-color: none;
+    
 }
 
-#timer-time {
-    font-weight: 600;
-    font-family: 'Karantina', sans-serif;
-    font-size: 128px;
-    color: var(--fontss);
-}
 
-svg{
+svg {
     position: absolute;
-    /* center the SVG over the circular .outer/.inner stack */
     top: 50%;
     left: 50%;
     width: 351px;
     height: 351px;
     transform: translate(-50%, -50%);
-    z-index: 2; /* keep the animated stroke above the white circle */
+    z-index: 2;
     pointer-events: none;
 }
 circle {
@@ -49,13 +44,7 @@ circle {
     stroke: var(--third-color);
     stroke-width: 20;
     stroke-linecap: round;
-    stroke-dasharray: 1040;     
-    stroke-dashoffset: 1040;    
-    animation: anim 2s linear forwards;
-}
-
-@keyframes anim{
-    100%{
-        stroke-dashoffset: 0;
-    }
+    stroke-dasharray: 1040;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.2s linear;
 }

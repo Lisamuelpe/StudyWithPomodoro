@@ -10,3 +10,9 @@
 }
 
 
+#timer-time {
+    font-weight: 600;
+    font-family: 'Karantina', sans-serif;
+    font-size: 128px;
+    color: var(--fontss);
+}

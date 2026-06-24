@@ -1,0 +1,12 @@
+﻿let Circle = document.getElementById("timer-circle");
+let InitialDOSCircle = parseFloat(getComputedStyle(Circle).getPropertyValue("stroke-dashoffset"));
+let TimerTime = document.getElementById("timer-time").innerText;
+let [a, b] = TimerTime.split(":").map(Number);
+let InitialTimeAsSeconds = a * 60 + b;
+export function SVGSynchWihtTimer(time) {
+    let [min, sec] = time.split(":").map(Number);
+    let TimeAsPercentage = ((min * 60 + sec) * 100) / InitialTimeAsSeconds;
+    Circle.style.strokeDashoffset = `${InitialDOSCircle - (InitialDOSCircle * TimeAsPercentage) / 100};`
+    console.log("exito")
+}
+

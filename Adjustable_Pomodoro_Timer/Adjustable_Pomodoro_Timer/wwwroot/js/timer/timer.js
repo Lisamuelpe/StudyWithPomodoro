@@ -1,13 +1,30 @@
-﻿import { RefreshTimer } from "./timerUI.js";
+﻿import { ButtonPause_Start } from "./timerUI.js"
+import { SVGSynchWihtTimer } from "./timerCircle.js"
 
-const Timer = document.getElementById("timer-time");
-function TimeSubstraction() {
-    const time = Timer.innerText.trim(":");
-    const [min, sec] = time.split(":").map(Number);
-    ((min == 0 || sec == 0) ? console.log("Se acabo") : console.log(`Activo ${min}:${sec}`));
-    ((sec - 1 < 0) ? min -= 1 : sec -= 1);
-}
+export let Interval;
 
 export function StartTimer() {
-    setInterval(TimeSubstraction, 1000);
+    Interval = setInterval(TimeSubstraction, 1000);
+}
+
+export function StopTimer() {
+    clearInterval(Interval);
+}
+
+
+const Timer = document.getElementById("timer-time");
+
+
+function TimeSubstraction() {
+    const time = Timer.innerText.trim();
+    let [min, sec] = time.split(":").map(Number);
+    if (sec - 1 < 0) {
+        min -= 1;
+        sec = 60;
+    }
+    else {
+        sec--;
+    }
+    Timer.innerHTML = `<div id="timer-time">${((min < 10) ? "0" + min : min)}:${((sec < 10) ? "0" + sec : sec)}</div>`
+    SVGSynchWihtTimer();
 }
