@@ -114,6 +114,6 @@ C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Ti
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\fz8y69u5bp-{0}-e78vxujiry-e78vxujiry.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\6ag4qo9rtb-{0}-ebk7rbqoe3-ebk7rbqoe3.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\yiiow3yhrw-{0}-kw7oye5j92-kw7oye5j92.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\hsb8xhw1px-{0}-1nzhhwy0dq-1nzhhwy0dq.gz
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\0vlthfaimc-{0}-b4p1bmydgg-b4p1bmydgg.gz
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\6el802lh9d-{0}-koe0gj2fsq-koe0gj2fsq.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\hsb8xhw1px-{0}-0osulmr5wv-0osulmr5wv.gz
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\obj\Debug\net10.0\compressed\6el802lh9d-{0}-yd7mecpfz1-yd7mecpfz1.gz

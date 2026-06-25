@@ -33,9 +33,26 @@ InitPillNavbar();
 
 Button_Reset.addEventListener("click", () => {
     if (TimerRunning) {
-        InitializeTimer();
-
+        StopTimer();
+        TimerRunning = false;
+        let activebutton = document.querySelector(".active");
+        let m;
+        let s;
+        if (activebutton == document.getElementById("study-button")) {
+            m = TimerData.StudyMinutes;
+            s = TimerData.StudySeconds;
         }
+        else if (activebutton == document.getElementById("short-break-button")) {
+            m = TimerData.ShortBreakMinutes;
+            s = TimerData.ShortBreakSeconds;
+        }
+        else {
+            m = TimerData.LongBreakMinutes;
+            s = TimerData.LongBreakSeconds;
+        };
+        InitializeTimer(m, s);
+        ButtonPause_Start(TimerRunning);
+    }
     }
 );
 
