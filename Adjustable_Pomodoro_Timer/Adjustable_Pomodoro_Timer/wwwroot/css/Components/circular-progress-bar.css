@@ -43,7 +43,7 @@ circle {
     fill: none;
     stroke: var(--third-color);
     stroke-width: 20;
-    stroke-linecap: round;
+    stroke-linecap: square;
     stroke-dasharray: 1040;
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 0.2s linear;

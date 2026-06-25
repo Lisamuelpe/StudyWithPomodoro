@@ -1,6 +1,7 @@
 ﻿import { ButtonPause_Start } from "./timerUI.js"
 import { SVGSynchWihtTimer } from "./timerCircle.js"
 
+
 export let Interval;
 
 export function StartTimer() {
@@ -28,3 +29,7 @@ function TimeSubstraction() {
     Timer.innerHTML = `<div id="timer-time">${((min < 10) ? "0" + min : min)}:${((sec < 10) ? "0" + sec : sec)}</div>`
     SVGSynchWihtTimer();
 }
+
+export function ResetTimer() {
+
+};

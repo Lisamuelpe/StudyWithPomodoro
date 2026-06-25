@@ -1,4 +1,5 @@
-﻿let timertime = document.getElementById("timer-time");
+﻿import { timertime } from "./Pillnavbar.js"
+
 let Circle = document.getElementById("timer-circle");
 let InitialDOSCircle = parseFloat(getComputedStyle(Circle).getPropertyValue("stroke-dasharray"));
 let InitialTimeAsSeconds;

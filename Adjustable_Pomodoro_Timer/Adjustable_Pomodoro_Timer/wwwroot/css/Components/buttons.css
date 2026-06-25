@@ -4,7 +4,7 @@
     width: 207px;
     max-width: 207px;
     color: var(--primary-color);
-    border-radius: 48px;
+    border-radius: 05px;
     font-size: 1.8rem;
     font-family: roboto;
     font-weight:900;
@@ -28,7 +28,7 @@ button{
     transition: 0.3s;
 }
 
-    button:hover {
+    button:not(.active):hover {
         background-color: #E2E1E1;
         cursor: pointer;
     }
