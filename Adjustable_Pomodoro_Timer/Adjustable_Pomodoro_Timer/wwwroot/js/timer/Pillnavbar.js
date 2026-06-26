@@ -3,6 +3,7 @@ import { InitializeTimer } from "./timerUI.js";
 import { StartTimer, Interval, StopTimer } from "./timer.js";
 import { ButtonPause_Start } from "./timerUI.js";
 import { TimerRunning } from "../app.js";
+import { ayuda, SVGSynchWihtTimer } from "./timerCircle.js"
 
 //PillNavbarButtons
 const StudyButton = document.getElementById("study-button");
@@ -23,8 +24,10 @@ StudyButton.addEventListener('click', () => {
     StudyButton.classList.add("active");
     StopTimer();
     InitializeTimer(TimerData.StudyMinutes, TimerData.StudySeconds);
-    timertime = document.getElementById("timer-time")
-    ButtonPause_Start(TimerRunning);
+    timertime = document.getElementById("timer-time");
+    ButtonPause_Start(false);
+    ayuda();
+    SVGSynchWihtTimer();
 }
     
 )
@@ -34,8 +37,10 @@ ShortBreakButton.addEventListener('click', () => {
     ShortBreakButton.classList.add("active");
     StopTimer();
     InitializeTimer(TimerData.ShortBreakMinutes, TimerData.ShortBreakSeconds);
-    timertime = document.getElementById("timer-time")
-    ButtonPause_Start(TimerRunning);
+    timertime = document.getElementById("timer-time");
+    ButtonPause_Start(false);
+    ayuda();
+    SVGSynchWihtTimer();
 }
 )
 LongBreakButton.addEventListener('click', () => {
@@ -44,6 +49,8 @@ LongBreakButton.addEventListener('click', () => {
     LongBreakButton.classList.add("active");
     StopTimer();
     InitializeTimer(TimerData.LongBreakMinutes, TimerData.LongBreakSeconds);
-    timertime = document.getElementById("timer-time")
-    ButtonPause_Start(TimerRunning);
+    timertime = document.getElementById("timer-time");
+    ButtonPause_Start(false);
+    ayuda();
+    SVGSynchWihtTimer();
 })

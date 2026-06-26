@@ -26,7 +26,7 @@
 }
 
 button{
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
     button:not(.active):hover {
@@ -34,6 +34,6 @@ button{
         cursor: pointer;
     }
 
-    .timer-button:active{
-        box-shadow: inset 
-    }
+.timer-button:active {
+    box-shadow: inset 0 3px 4px 0 rgba(0,0,0,0.25);
+}

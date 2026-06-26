@@ -3,7 +3,7 @@
 let Circle = document.getElementById("timer-circle");
 let InitialDOSCircle = parseFloat(getComputedStyle(Circle).getPropertyValue("stroke-dasharray"));
 let InitialTimeAsSeconds;
-function ayuda() {
+export function ayuda() {
     let aa = timertime.textContent.trim();
     let [a, b] = aa.split(":").map(Number);
     InitialTimeAsSeconds = a * 60 + b;

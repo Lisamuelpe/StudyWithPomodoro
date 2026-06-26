@@ -3,6 +3,7 @@ import { InitializeTimer, ButtonPause_Start } from "./timer/timerUI.js"
 import { TimerData } from "./Settings/Settings.js"
 import { StartTimer, Interval, StopTimer } from "./timer/timer.js"
 import { InitPillNavbar } from "./timer/Pillnavbar.js";
+import { SVGSynchWihtTimer } from "./timer/timerCircle.js"
 
 //PillNavbar
 let PillNavbarState;
@@ -52,6 +53,7 @@ Button_Reset.addEventListener("click", () => {
         };
         InitializeTimer(m, s);
         ButtonPause_Start(TimerRunning);
+        SVGSynchWihtTimer();
     }
     }
 );

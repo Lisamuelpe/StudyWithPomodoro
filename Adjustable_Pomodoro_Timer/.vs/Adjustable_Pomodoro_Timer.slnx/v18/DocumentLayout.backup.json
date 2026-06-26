@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|c:\\users\\lisan\\onedrive\\desktop\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\wwwroot\\css\\components\\buttons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|solutionrelative:adjustable_pomodoro_timer\\wwwroot\\css\\components\\buttons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|c:\\users\\lisan\\onedrive\\desktop\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|solutionrelative:adjustable_pomodoro_timer\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|c:\\users\\lisan\\onedrive\\desktop\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\wwwroot\\js\\timer\\pillnavbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|solutionrelative:adjustable_pomodoro_timer\\wwwroot\\js\\timer\\pillnavbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|c:\\users\\lisan\\onedrive\\desktop\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\wwwroot\\js\\timer\\timercircle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|solutionrelative:adjustable_pomodoro_timer\\wwwroot\\js\\timer\\timercircle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|c:\\users\\lisan\\onedrive\\desktop\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\adjustable_pomodoro_timer\\wwwroot\\js\\settings\\settings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A4C62ACE-F193-3D9D-134C-41851FC2BC92}|Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer.csproj|solutionrelative:adjustable_pomodoro_timer\\wwwroot\\js\\settings\\settings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +34,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pillnavbar.js",
+              "DocumentMoniker": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\Pillnavbar.js",
+              "RelativeDocumentMoniker": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\Pillnavbar.js",
+              "ToolTip": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\Pillnavbar.js",
+              "RelativeToolTip": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\Pillnavbar.js",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-26T00:02:30.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "buttons.css",
-              "DocumentMoniker": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\css\\Components\\buttons.css",
-              "RelativeDocumentMoniker": "Adjustable_Pomodoro_Timer\\wwwroot\\css\\Components\\buttons.css",
-              "ToolTip": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\css\\Components\\buttons.css*",
-              "RelativeToolTip": "Adjustable_Pomodoro_Timer\\wwwroot\\css\\Components\\buttons.css*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-25T23:33:32.296Z",
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\app.js",
+              "RelativeDocumentMoniker": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\app.js",
+              "ToolTip": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\app.js",
+              "RelativeToolTip": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\app.js",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-26T00:01:30.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "timerCircle.js",
+              "DocumentMoniker": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\timerCircle.js",
+              "RelativeDocumentMoniker": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\timerCircle.js",
+              "ToolTip": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\timerCircle.js",
+              "RelativeToolTip": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\timer\\timerCircle.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-26T00:01:29.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Settings.js",
+              "DocumentMoniker": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\Settings\\Settings.js",
+              "RelativeDocumentMoniker": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\Settings\\Settings.js",
+              "ToolTip": "C:\\Users\\lisan\\OneDrive\\Desktop\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\Adjustable_Pomodoro_Timer\\wwwroot\\js\\Settings\\Settings.js",
+              "RelativeToolTip": "Adjustable_Pomodoro_Timer\\wwwroot\\js\\Settings\\Settings.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-26T00:01:22.522Z",
               "EditorCaption": ""
             }
           ]
