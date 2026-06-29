@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Adjustable_Pomodoro_Timer\Views\Home\" />
     <Folder Include="wwwroot\Fonts\" />
+    <Folder Include="wwwroot\Audios\" />
   </ItemGroup>
 
 </Project>

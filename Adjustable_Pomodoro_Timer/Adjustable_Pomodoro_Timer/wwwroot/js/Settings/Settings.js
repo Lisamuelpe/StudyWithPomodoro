@@ -4,5 +4,7 @@
     ShortBreakMinutes: 5,
     ShortBreakSeconds: 0,
     LongBreakMinutes: 15,
-    LongBreakSeconds: 0
+    LongBreakSeconds: 0,
+    SessionNumber: 1,
+    LongBreakInterval: 4
 };
