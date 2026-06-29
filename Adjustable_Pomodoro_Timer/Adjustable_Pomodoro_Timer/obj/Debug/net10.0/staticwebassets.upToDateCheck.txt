@@ -76,6 +76,7 @@ wwwroot\Fonts\Roboto\static\Roboto_SemiCondensed-Thin.ttf
 wwwroot\Fonts\Roboto\static\Roboto_SemiCondensed-ThinItalic.ttf
 wwwroot\js\app.js
 wwwroot\js\Settings\Settings.js
+wwwroot\js\timer\Pillnavbar.js
 wwwroot\js\timer\timerCircle.js
 wwwroot\js\timer\timerUI.js
 wwwroot\lib\bootstrap-icons\bootstrap-icons.css
@@ -142,7 +143,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\js\timer\Pillnavbar.js
 wwwroot\js\timer\timer.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\css\Components\buttons.css
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\css\Components\circular-progress-bar.css
@@ -162,6 +162,7 @@ C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Ti
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\Fonts\Roboto\README.txt
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\app.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\Settings\Settings.js
+C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\timer\Pillnavbar.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\timer\timerCircle.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\timer\timerUI.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\lib\bootstrap-icons\bootstrap-icons.css
@@ -225,5 +226,4 @@ C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Ti
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\timer\Pillnavbar.js
 C:\Users\lisan\OneDrive\Desktop\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\Adjustable_Pomodoro_Timer\wwwroot\js\timer\timer.js

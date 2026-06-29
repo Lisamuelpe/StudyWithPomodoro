@@ -2,7 +2,7 @@
 import { InitializeTimer } from "./timerUI.js";
 import { StartTimer, Interval, StopTimer } from "./timer.js";
 import { ButtonPause_Start } from "./timerUI.js";
-import { TimerRunning, ToggleTimerRunning } from "./timer.js";
+import {TimerRunning, ToggleTimerRunning} from "./timer.js";
 import { ayuda, SVGSynchWihtTimer } from "./timerCircle.js"
 
 
@@ -22,7 +22,7 @@ export function InitPillNavbar() {
 export function TimerModeChange() {
     let Active = document.querySelector(".active");
     if (Active == StudyButton) {
-        if (TimerData.SessionNumber == TimerData.LongBreakInterval) {
+        if (TimerData.SessionNumber % TimerData.LongBreakInterval == 0) {
             skibiditoilet(LongBreakButton);
         }
         else {
@@ -36,7 +36,7 @@ export function TimerModeChange() {
     }
 }
 
-function skibiditoilet(button) {
+export function skibiditoilet(button) {
     ToggleTimerRunning();
     let HolaAmigo = document.querySelectorAll(".active");
     let M

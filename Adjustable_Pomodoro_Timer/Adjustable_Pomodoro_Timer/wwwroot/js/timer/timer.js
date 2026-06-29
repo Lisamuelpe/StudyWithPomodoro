@@ -25,9 +25,19 @@ export function StopTimer() {
     clearInterval(Interval);
 }
 
+export function ToggleSkipButton() {
+    if (Button_Reset.classList.contains("SkipActive")) {
+        Button_Reset.classList.remove("SkipActive");
+    }
+    else {
+        Button_Reset.classList.add("SkipActive");
+    }
+    console.log(`Classes: ${Button_Reset.classList}`)
+}
 
 const Timer = document.getElementById("timer-time");
 
+ToggleSkipButton();
 
 function TimeSubstraction() {
     const time = Timer.innerText.trim();
@@ -55,7 +65,6 @@ function TimeSubstraction() {
 
 
 Button_Start_Stop.addEventListener("click", () => {
-    console.log(`Timer running before clicking = ${TimerRunning}`)
     if (!TimerRunning) {
 
         TimerRunning = true;
@@ -67,30 +76,16 @@ Button_Start_Stop.addEventListener("click", () => {
         TimerRunning = false;
         ButtonPause_Start(TimerRunning);
     }
-    console.log(`Timer running after clicking = ${TimerRunning}`)
+    ToggleSkipButton();
 }
 );
 
 Button_Reset.addEventListener("click", () => {
     if (TimerRunning) {
+        ToggleSkipButton();
+        ToggleTimerRunning();
         StopTimer();
-        TimerRunning = false;
-        let activebutton = document.querySelector(".active");
-        let m;
-        let s;
-        if (activebutton == document.getElementById("study-button")) {
-            m = TimerData.StudyMinutes;
-            s = TimerData.StudySeconds;
-        }
-        else if (activebutton == document.getElementById("short-break-button")) {
-            m = TimerData.ShortBreakMinutes;
-            s = TimerData.ShortBreakSeconds;
-        }
-        else {
-            m = TimerData.LongBreakMinutes;
-            s = TimerData.LongBreakSeconds;
-        };
-        InitializeTimer(m, s);
+        TimerModeChange();
         ButtonPause_Start(TimerRunning);
         SVGSynchWihtTimer();
     }

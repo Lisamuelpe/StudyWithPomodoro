@@ -11,7 +11,7 @@
     border: none;
     box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.2),
                 0 8px 18px rgba(0, 0, 0, 0.22);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     transition: 0.3s;
 }
 
@@ -29,12 +29,17 @@ button{
     transition: 0.2s;
 }
 
-    button:not(.active):hover {
+    button:not(.active, .SkipActive):hover {
         background-color: #E2E1E1;
         cursor: pointer;
     }
 
 .timer-button:active {
     box-shadow: inset 0 3px 4px 0 rgba(0,0,0,0.25);
+}
+
+.SkipActive{
+    opacity: 0.5;
+    pointer-events: none;
 }
 
