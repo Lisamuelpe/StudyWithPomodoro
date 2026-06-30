@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyWithPomodoro</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="css/Adjustable_Pomodoro_Timer.styles.css" asp-append-version="true" />
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css" asp-append-version="true" />
+    
+    <!--Pages and Layout-->
+    <link rel="stylesheet" href="css/Pages/timer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/layout.css" asp-append-version="true"/>
+
+    <!--variables-->
+    <link rel="stylesheet" href="css/variables.css" asp-append-version="true" />
+
+    <!--Utilities-->
+    <link rel="stylesheet" href="css/utilities.css" asp-append-version="true" />
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="css/Fonts.css" asp-append-version="true" />
+
+    <!--Components-->
+    <link rel="stylesheet" href="css/Components/buttons.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Components/pill-navbar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Components/timer-card.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Components/timer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Components/widget.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Components/circular-progress-bar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Components/SessionCounter.css" asp-append-version="true" />
+
+</head>
+
+<body>
+    <header>
+    </header>
+
+        <main role="main" class="pb-3">
+            <!--Timer selectors pill navbar-->
+            <nav class="pill-navbar glass">
+                <ul class="pill-navbar-list">
+                    <li class="nav-li">
+                        <button class="nav-button" id="study-button">
+                            <i class="bi bi-book"></i>
+                            Study
+                        </button>
+                    </li>
+
+                    <li class="nav-li">
+                        <button class="nav-button" id="short-break-button">
+                            <i class="bi bi-slash-circle"></i>
+                            Short Break
+                        </button>
+                    </li>
+
+                    <li class="nav-li">
+                        <button class="nav-button" id="long-break-button">
+                            <i class="bi bi-slash-circle-fill"></i>
+                            Long Break
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="timer-card glass">
+                <button id="button-add-widget" class="">
+                    <i class="bi bi-plus-circle"></i>
+                </button>
+
+                <div class="timer-clock">
+
+                    <div class="skill"> 
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="timer-time" class="no-select">00:00</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="351px" height="351px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="175.5" cy="175.5" r="165.5" stroke-linecap="round" id="timer-circle"/>
+                        </svg>
+                    </div>
+
+                </div>
+                <div id="SessionNumber" class="no-select">
+                    Session #1
+                </div>
+                <div class="timer-controllers no-select">
+                    <button class="timer-button" id="restart">
+                        <i class="bi bi-skip-end-fill squarei"></i>
+                        Skip
+                    </button>
+
+                    <button class="timer-button" id="start-stop">
+                        <i class="bi bi-play-fill"></i>
+                        Start
+                    </button>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        <p class="text-center">Copyright &copy; 2026 Lisandro Peña (@Lisamuelpe) • MIT License</p>
+    </footer>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

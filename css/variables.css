@@ -1,0 +1,12 @@
+﻿:root {
+    --primary-color: #4F8A5B;
+    --secondary-color: #ffffff;
+    --third-color: #F4DE87;
+    --fake-glass-green: #89bd88;
+    /**/
+    --hover-color: #BEBEBE;
+    /*Circular timer*/
+    --background-timer: #ffffff;
+    /*Fonts*/
+    --fontss: #f0f0f0;
+}
