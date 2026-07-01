@@ -10,6 +10,8 @@
     <!--Bootstrap icons-->
     <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css" asp-append-version="true" />
     
+    <!--Page logo-->
+    <link rel="icon" type="image/png" href="logo/favicon.png"/>
     <!--Pages and Layout-->
     <link rel="stylesheet" href="css/Pages/timer.css" asp-append-version="true" />
     <link rel="stylesheet" href="css/layout.css" asp-append-version="true"/>
@@ -24,6 +26,7 @@
     <link rel="stylesheet" href="css/Fonts.css" asp-append-version="true" />
 
     <!--Components-->
+    <link rel="stylesheet" href="css/Components/logo.css" asp-append-version="true" />
     <link rel="stylesheet" href="css/Components/buttons.css" asp-append-version="true" />
     <link rel="stylesheet" href="css/Components/pill-navbar.css" asp-append-version="true" />
     <link rel="stylesheet" href="css/Components/timer-card.css" asp-append-version="true" />
@@ -37,33 +40,49 @@
 <body>
     <header>
     </header>
-
         <main role="main" class="pb-3">
             <!--Timer selectors pill navbar-->
-            <nav class="pill-navbar glass">
-                <ul class="pill-navbar-list">
-                    <li class="nav-li">
-                        <button class="nav-button" id="study-button">
-                            <i class="bi bi-book"></i>
-                            Study
-                        </button>
-                    </li>
+            <div class="upper-container">
+                <div class="upper-logo-container">
+                    <img src = "logo/favicon.png" class="logo" alt="Logo" />
+                </div>
 
-                    <li class="nav-li">
-                        <button class="nav-button" id="short-break-button">
-                            <i class="bi bi-slash-circle"></i>
-                            Short Break
-                        </button>
-                    </li>
+                <nav class="pill-navbar glass">
+                    <ul class="pill-navbar-list">
+                        <li class="nav-li">
+                            <button class="nav-button" id="study-button">
+                                <i class="bi bi-book"></i>
+                                Study
+                            </button>
+                        </li>
 
-                    <li class="nav-li">
-                        <button class="nav-button" id="long-break-button">
-                            <i class="bi bi-slash-circle-fill"></i>
-                            Long Break
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+                        <li class="nav-li">
+                            <button class="nav-button" id="short-break-button">
+                                <i class="bi bi-slash-circle"></i>
+                                Short Break
+                            </button>
+                        </li>
+
+                        <li class="nav-li">
+                            <button class="nav-button" id="long-break-button">
+                                <i class="bi bi-slash-circle-fill"></i>
+                                Long Break
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="buttons-aside-pill">
+                        <button id="button-settings" class="white-no-fill">
+                        <i class="bi bi-gear"></i>
+                        Settings
+                    </button>
+
+                    <button id="button-sign-in" class="white-no-fill">
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        Sign In
+                    </button>
+                </div>
+            </div>
 
             <section class="timer-card glass">
                 <button id="button-add-widget" class="">

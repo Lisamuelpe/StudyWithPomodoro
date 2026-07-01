@@ -25,11 +25,24 @@
     font-size: 32px;
 }
 
+.white-no-fill{
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.white-no-fill:hover{
+    background: rgba(255, 255, 255, 0.16);
+    cursor: pointer;
+}
+
 button{
     transition: 0.2s;
 }
 
-    button:not(.active, .SkipActive):hover {
+    button:not(.active, .SkipActive, .white-no-fill):hover {
         background-color: #E2E1E1;
         cursor: pointer;
     }

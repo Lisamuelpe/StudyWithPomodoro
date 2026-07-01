@@ -11,16 +11,17 @@
     align-items:center;
     width: 100%;
     max-width: 594px;
-    border-radius: 100%;
+    border-radius: 50px;
     height: 69px;
-    margin: 0 auto 1.5rem auto;
-    padding: 0.25px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .timer-card{
     justify-items:center;
     padding: 1.563rem;
     margin: 0 140px 0 140px;
+    border-radius: 28px;
 }
 
 .timer-clock{
