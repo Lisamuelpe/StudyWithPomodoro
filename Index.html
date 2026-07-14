@@ -5,35 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StudyWithPomodoro</title>
     <script type="importmap"></script>
-    <link rel="stylesheet" href="css/Adjustable_Pomodoro_Timer.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/Adjustable_Pomodoro_Timer.styles.css" />
 
     <!--Bootstrap icons-->
-    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css" asp-append-version="true" />
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css" />
     
-    <!--Page logo-->
-    <link rel="icon" type="image/png" href="logo/favicon.png"/>
-    <!--Pages and Layout-->
-    <link rel="stylesheet" href="css/Pages/timer.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/layout.css" asp-append-version="true"/>
-
-    <!--variables-->
-    <link rel="stylesheet" href="css/variables.css" asp-append-version="true" />
-
-    <!--Utilities-->
-    <link rel="stylesheet" href="css/utilities.css" asp-append-version="true" />
-
-    <!--Fonts-->
-    <link rel="stylesheet" href="css/Fonts.css" asp-append-version="true" />
-
-    <!--Components-->
-    <link rel="stylesheet" href="css/Components/logo.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/buttons.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/pill-navbar.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/timer-card.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/timer.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/widget.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/circular-progress-bar.css" asp-append-version="true" />
-    <link rel="stylesheet" href="css/Components/SessionCounter.css" asp-append-version="true" />
+    <link rel="stylesheet" href="css/main.css" />
 
 </head>
 
@@ -85,9 +62,8 @@
             </div>
 
             <section class="timer-card glass">
-                <button id="button-add-widget" class="">
-                    <i class="bi bi-plus-circle"></i>
-                </button>
+                <i class="bi bi-three-dots" id="plus-icon"></i>
+               
 
                 <div class="timer-clock">
 
@@ -125,12 +101,46 @@
                 </div>
             </section>
         </main>
-
     <footer>
         <a class="amargin" href="https://github.com/Lisamuelpe" target="_blank"><i class="bi bi-github gicon"></i></a>
         <p class="nam">Made by <span class="s">Lisandro Peña</span></p>
         <p class="copy">Copyright &copy; 2026 Lisandro Peña (@Lisamuelpe) • MIT License</p>
     </footer>
+    <section class="modal" id="modal-settings">
+        <div id="modal-settings-container">
+            <div id="modal-settings-header">
+                <h1>SETTINGS</h1>
+                <i class="bi bi-x-lg" id="button-close-modal"></i>
+            </div>
+            <div class="subtitle">
+                <h2>Time Adjustment</h2>
+                <i class="bi bi-clock"></i>
+            </div>
+            <div class="grid-container">
+                <div class="labels">
+                    <h1>Study</h1>
+                    <h1>Short Break</h1>
+                    <h1>Long Break</h1>
+                    <h1>Sessions before long break</h1>
+                </div>
+                <form id="inputs">
+                    <div class="grid-container-div">
+                        <input type="number" id="study-time-minutes" name="study-time-minutes" min="0" max="999" value="25">
+                        <input type="number" id="study-time-seconds" name="study-time-seconds" min="1" max="999" value="0">
+                    </div>
+                    <div class="grid-container-div">
+                        <input type="number" id="short-break-minutes" name="short-break-minutes" min="0" max="999" value="5">
+                        <input type="number" id="short-break-seconds" name="short-break-seconds" min="1" max="999" value="0">
+                    </div>
+                    <div class="grid-container-div">
+                        <input type="number" id="long-break-minutes" name="long-break-minutes" min="0" max="999" value="15">
+                        <input type="number" id="long-break-seconds" name="long-break-seconds" min="1" max="999" value="0">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
     <script src="js/app.js" type="module"></script>
 </body>
 </html>

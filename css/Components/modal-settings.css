@@ -1,0 +1,40 @@
+#modal-settings{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'roboto', sans-serif;
+    padding: 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#modal-settings-container{
+    background-color: var(--secondary-color);
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 80vh;
+    margin: 5vh auto;
+    border-radius: 10px;
+}
+
+#modal-settings-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#modal-settings-body-form-time-adjustment{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}

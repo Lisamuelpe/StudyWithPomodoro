@@ -1,0 +1,14 @@
+@import "./Components/buttons.css";
+@import "./Components/logo.css";
+@import "./Components/pill-navbar.css";
+@import "./Components/timer-card.css";
+@import "./Components/timer.css";
+@import "./Components/widget.css";
+@import "./Components/circular-progress-bar.css";
+@import "./Components/SessionCounter.css";
+@import "./Components/modal-settings.css";
+@import "utilities.css";
+@import "variables.css";
+@import "fonts.css";
+@import "layout.css";
+@import "./Pages/timer.css";
