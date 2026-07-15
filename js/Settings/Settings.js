@@ -6,7 +6,15 @@
     LongBreakMinutes: 15,
     LongBreakSeconds: 0,
     SessionNumber: 1,
-    LongBreakInterval: 4
+    LongBreakInterval: 4,
+    AutoStartTimer: false,
+    FullScreenMode: false,
+    SelectedColor: "#4F8A5B",
+    TasksWidth: 300,
+    TasksHeight: 400,
+    TasksTransparency: 100,
+    CircleVisibility: "visible",
+    CircleColor: "#4F8A5B"
 };
 
 export let DefaultColors = {

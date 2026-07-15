@@ -1,0 +1,268 @@
+#modal-auth{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'roboto', sans-serif;
+    padding: 0;
+    z-index: 1001;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-auth-container{
+    background-color: #ffffff;
+    width: 780px;
+    min-height: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.auth-close-btn{
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.auth-close-btn:hover{
+    color: #d48b8b;
+}
+
+#modal-auth-body{
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+.auth-view{
+    display: none;
+    flex: 1;
+}
+
+.auth-view.active{
+    display: flex;
+}
+
+/* ── Main split view ── */
+
+.auth-split{
+    display: flex;
+    flex: 1;
+    min-height: 500px;
+}
+
+.auth-split-left{
+    flex: 1;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.auth-split-left h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+    color: VAR(--primary-color);
+    letter-spacing: 1px;
+}
+
+.auth-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.auth-btn i{
+    font-size: 1.2rem;
+}
+
+.auth-btn-google{
+    background: #f5f5f5;
+    color: #444;
+    border: 1px solid #e0e0e0;
+}
+
+.auth-btn-google:hover{
+    background: #eeeeee;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.auth-btn-email{
+    background: var(--primary-color);
+    color: white;
+}
+
+.auth-btn-email:hover{
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--primary-color) 35%, transparent);
+}
+
+.auth-signup-text{
+    color: #888;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+}
+
+.auth-signup-link{
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.auth-signup-link:hover{
+    opacity: 0.8;
+}
+
+/* ── Right side (logo + particles) ── */
+
+.auth-split-right{
+    flex: 1;
+    background-color: var(--primary-color);
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-logo{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* ── Login / Signup views ── */
+
+.auth-view-login.active,
+.auth-view-signup.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 2.5rem;
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-back{
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.auth-back:hover{
+    color: var(--primary-color);
+}
+
+.auth-view-login h2,
+.auth-view-signup h2{
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    font-family: 'Karantina', sans-serif;
+    font-size: 2rem;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.auth-view-login .auth-back + h2,
+.auth-view-signup .auth-back + h2{
+    margin-top: -0.25rem;
+}
+
+#auth-login-form,
+#auth-signup-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.auth-field label{
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.auth-field input{
+    padding: 0.7rem 0.85rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'roboto', sans-serif;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-field input:focus{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+.auth-btn-primary{
+    background: var(--primary-color);
+    color: white;
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+}
+
+.auth-btn-primary:hover{
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--primary-color) 35%, transparent);
+}

@@ -109,36 +109,180 @@
     <section class="modal" id="modal-settings">
         <div id="modal-settings-container">
             <div id="modal-settings-header">
+                <div></div>
                 <h1>SETTINGS</h1>
-                <i class="bi bi-x-lg" id="button-close-modal"></i>
-            </div>
-            <div class="subtitle">
-                <h2>Time Adjustment</h2>
-                <i class="bi bi-clock"></i>
-            </div>
-            <div class="grid-container">
-                <div class="labels">
-                    <h1>Study</h1>
-                    <h1>Short Break</h1>
-                    <h1>Long Break</h1>
-                    <h1>Sessions before long break</h1>
+                <div>
+                    <i class="bi bi-x-lg" id="button-close-modal"></i>
                 </div>
-                <form id="inputs">
-                    <div class="grid-container-div">
-                        <input type="number" id="study-time-minutes" name="study-time-minutes" min="0" max="999" value="25">
-                        <input type="number" id="study-time-seconds" name="study-time-seconds" min="1" max="999" value="0">
-                    </div>
-                    <div class="grid-container-div">
-                        <input type="number" id="short-break-minutes" name="short-break-minutes" min="0" max="999" value="5">
-                        <input type="number" id="short-break-seconds" name="short-break-seconds" min="1" max="999" value="0">
-                    </div>
-                    <div class="grid-container-div">
-                        <input type="number" id="long-break-minutes" name="long-break-minutes" min="0" max="999" value="15">
-                        <input type="number" id="long-break-seconds" name="long-break-seconds" min="1" max="999" value="0">
-                    </div>
-                </form>
             </div>
-            
+            <div id="modal-settings-content">
+                <div class="subtitle">
+                    <h2>Time Adjustment</h2>
+                    <i class="bi bi-clock"></i>
+                </div>
+                <div class="time-grid">
+                    <div class="time-row">
+                        <span class="time-label">Study</span>
+                        <div class="time-input-group">
+                            <input type="number" id="study-time-minutes" name="study-time-minutes" min="0" max="999" value="25">
+                            <span class="time-sep">:</span>
+                            <input type="number" id="study-time-seconds" name="study-time-seconds" min="1" max="999" value="0">
+                        </div>
+                    </div>
+                    <div class="time-row">
+                        <span class="time-label">Short Break</span>
+                        <div class="time-input-group">
+                            <input type="number" id="short-break-minutes" name="short-break-minutes" min="0" max="999" value="5">
+                            <span class="time-sep">:</span>
+                            <input type="number" id="short-break-seconds" name="short-break-seconds" min="1" max="999" value="0">
+                        </div>
+                    </div>
+                    <div class="time-row">
+                        <span class="time-label">Long Break</span>
+                        <div class="time-input-group">
+                            <input type="number" id="long-break-minutes" name="long-break-minutes" min="0" max="999" value="15">
+                            <span class="time-sep">:</span>
+                            <input type="number" id="long-break-seconds" name="long-break-seconds" min="1" max="999" value="0">
+                        </div>
+                    </div>
+                    <div class="time-row">
+                        <span class="time-label">Sessions before long break</span>
+                        <div class="time-input-group">
+                            <input type="number" id="sessions-before-long-break" name="sessions-before-long-break" min="1" max="99" value="4">
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Auto Start Timer</span>
+                    <label class="switch">
+                        <input type="checkbox" id="auto-start-timer">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="subtitle">
+                    <h2>Appearance</h2>
+                    <i class="bi bi-palette"></i>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Full Screen Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="full-screen-mode">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Colors</span>
+                    <div class="color-options" id="theme-color-options">
+                        <div class="color-square" style="background: #4F8A5B" data-color="#4F8A5B"></div>
+                        <div class="color-square" style="background: #5C7FA3" data-color="#5C7FA3"></div>
+                        <div class="color-square" style="background: #7B5D9A" data-color="#7B5D9A"></div>
+                    </div>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Tasks Width & Height</span>
+                    <div class="tasks-dimensions">
+                        <input type="number" id="tasks-width" min="50" max="500" value="300">
+                        <span class="dimension-sep">x</span>
+                        <input type="number" id="tasks-height" min="50" max="500" value="400">
+                    </div>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Tasks Transparency</span>
+                    <input type="number" id="tasks-transparency" min="0" max="100" value="100" class="setting-number-input">
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Circle Visibility</span>
+                    <select id="circle-visibility" class="setting-select">
+                        <option value="visible">Visible</option>
+                        <option value="hidden">Hidden</option>
+                    </select>
+                </div>
+                <div class="setting-row">
+                    <span class="setting-label">Circle Color</span>
+                    <input type="color" id="circle-color" value="#4F8A5B">
+                </div>
+                <div class="modal-actions">
+                    <button id="reset-settings" class="btn-secondary">Reset</button>
+                    <button id="apply-settings" class="btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal" id="modal-auth">
+        <div id="modal-auth-container">
+            <button id="button-close-auth" class="auth-close-btn">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div id="modal-auth-body">
+                <div class="auth-view auth-view-main active">
+                    <div class="auth-split">
+                        <div class="auth-split-left">
+                            <h2>Welcome Back</h2>
+                            <div class="auth-actions">
+                                <button class="auth-btn auth-btn-google" id="auth-google-btn">
+                                    <i class="bi bi-google"></i>
+                                    <span>Continue with Google</span>
+                                </button>
+                                <button class="auth-btn auth-btn-email" id="auth-email-btn">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>Continue with Gmail</span>
+                                </button>
+                            </div>
+                            <p class="auth-signup-text">
+                                Don't have an account?
+                                <span class="auth-signup-link" id="auth-signup-btn">Create it here</span>
+                            </p>
+                        </div>
+                        <div class="auth-split-right">
+                            <img src="logo/favicon.png" alt="Logo" class="auth-logo" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auth-view auth-view-login">
+                    <button class="auth-back" id="auth-back-login">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <h2>Sign In</h2>
+                    <form id="auth-login-form">
+                        <div class="auth-field">
+                            <label>Email</label>
+                            <input type="email" id="auth-login-email" placeholder="your@email.com" autocomplete="email">
+                        </div>
+                        <div class="auth-field">
+                            <label>Password</label>
+                            <input type="password" id="auth-login-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password">
+                        </div>
+                        <button type="submit" class="auth-btn auth-btn-primary">Sign In</button>
+                    </form>
+                </div>
+
+                <div class="auth-view auth-view-signup">
+                    <button class="auth-back" id="auth-back-signup">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <h2>Create Account</h2>
+                    <form id="auth-signup-form">
+                        <div class="auth-field">
+                            <label>Name</label>
+                            <input type="text" id="auth-signup-name" placeholder="Your name" autocomplete="name">
+                        </div>
+                        <div class="auth-field">
+                            <label>Email</label>
+                            <input type="email" id="auth-signup-email" placeholder="your@email.com" autocomplete="email">
+                        </div>
+                        <div class="auth-field">
+                            <label>Password</label>
+                            <input type="password" id="auth-signup-password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password">
+                        </div>
+                        <div class="auth-field">
+                            <label>Confirm Password</label>
+                            <input type="password" id="auth-signup-confirm" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password">
+                        </div>
+                        <button type="submit" class="auth-btn auth-btn-primary">Create Account</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <script src="js/app.js" type="module"></script>
