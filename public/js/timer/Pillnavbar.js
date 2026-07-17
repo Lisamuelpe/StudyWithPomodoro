@@ -1,4 +1,4 @@
-﻿import { TimerData, DefaultColors } from "../Settings/Settings.js";
+﻿import { TimerData, UserColors } from "../Settings/Settings.js";
 import { InitializeTimer, ChangePageColor } from "./timerUI.js";
 import { StartTimer, Interval, StopTimer } from "./timer.js";
 import { ButtonPause_Start } from "./timerUI.js";
@@ -46,15 +46,15 @@ export function skibiditoilet(button) {
     let S
 
     if (button == StudyButton) {
-        ChangePageColor(DefaultColors.Study);
+        ChangePageColor(UserColors.Study);
         M = TimerData.StudyMinutes;
         S = TimerData.StudySeconds;
     } else if (button == ShortBreakButton) {
-        ChangePageColor(DefaultColors.ShortBreak);
+        ChangePageColor(UserColors.ShortBreak);
         M = TimerData.ShortBreakMinutes;
         S = TimerData.ShortBreakSeconds;
     } else {
-        ChangePageColor(DefaultColors.LongBreak);
+        ChangePageColor(UserColors.LongBreak);
         M = TimerData.LongBreakMinutes;
         S = TimerData.LongBreakSeconds;
     }

@@ -4,5 +4,6 @@ import "./timer/timer.js";
 import "./timer/Pillnavbar.js";
 import "./timer/timerCircle.js";
 import "./timer/timersettings.js";
+import "./timer/moreMenu.js";
 import "./Auth/authModal.js";
 

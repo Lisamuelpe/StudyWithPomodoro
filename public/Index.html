@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css" />
     
     <link rel="stylesheet" href="css/main.css" />
-
+    <link rel="icon" type="image/x-icon" href="logo/favicon.png" />
 </head>
 
 <body>
@@ -62,7 +62,14 @@
             </div>
 
             <section class="timer-card glass">
-                <i class="bi bi-three-dots" id="plus-icon"></i>
+                <div class="more-container">
+                    <i class="bi bi-three-dots" id="more"></i>
+                    <div class="more-dropdown" id="more-dropdown">
+                        <button class="more-dropdown-item" data-action="tasks">Tasks</button>
+                        <button class="more-dropdown-item" data-action="progress">My progress</button>
+                        <button class="more-dropdown-item" data-action="help">Help</button>
+                    </div>
+                </div>
                
 
                 <div class="timer-clock">
@@ -109,11 +116,7 @@
     <section class="modal" id="modal-settings">
         <div id="modal-settings-container">
             <div id="modal-settings-header">
-                <div></div>
-                <h1>SETTINGS</h1>
-                <div>
-                    <i class="bi bi-x-lg" id="button-close-modal"></i>
-                </div>
+                <i class="bi bi-x-lg" id="button-close-modal"></i>
             </div>
             <div id="modal-settings-content">
                 <div class="subtitle">
@@ -173,17 +176,9 @@
                 <div class="setting-row">
                     <span class="setting-label">Colors</span>
                     <div class="color-options" id="theme-color-options">
-                        <div class="color-square" style="background: #4F8A5B" data-color="#4F8A5B"></div>
-                        <div class="color-square" style="background: #5C7FA3" data-color="#5C7FA3"></div>
-                        <div class="color-square" style="background: #7B5D9A" data-color="#7B5D9A"></div>
-                    </div>
-                </div>
-                <div class="setting-row">
-                    <span class="setting-label">Tasks Width & Height</span>
-                    <div class="tasks-dimensions">
-                        <input type="number" id="tasks-width" min="50" max="500" value="300">
-                        <span class="dimension-sep">x</span>
-                        <input type="number" id="tasks-height" min="50" max="500" value="400">
+                        <input type="color" class="color-square" value="#4F8A5B" data-color="#4F8A5B" data-mode="Study">
+                        <input type="color" class="color-square" value="#5C7FA3" data-color="#5C7FA3" data-mode="ShortBreak">
+                        <input type="color" class="color-square" value="#7B5D9A" data-color="#7B5D9A" data-mode="LongBreak">
                     </div>
                 </div>
                 <div class="setting-row">

@@ -1,4 +1,4 @@
-import { TimerData, DefaultColors } from "../Settings/Settings.js";
+import { TimerData, DefaultTimerData, DefaultColors, UserColors } from "../Settings/Settings.js";
 import { ChangePageColor, InitializeTimer } from "./timerUI.js";
 
 const modal = document.getElementById("modal-settings");
@@ -8,8 +8,6 @@ const closeButton = document.getElementById("button-close-modal");
 const autoStart = document.getElementById("auto-start-timer");
 const fullScreen = document.getElementById("full-screen-mode");
 const themeColorOptions = document.getElementById("theme-color-options");
-const tasksWidth = document.getElementById("tasks-width");
-const tasksHeight = document.getElementById("tasks-height");
 const tasksTransparency = document.getElementById("tasks-transparency");
 const circleVisibility = document.getElementById("circle-visibility");
 const circleColor = document.getElementById("circle-color");
@@ -24,14 +22,18 @@ const longBreakMinutes = document.getElementById("long-break-minutes");
 const longBreakSeconds = document.getElementById("long-break-seconds");
 const sessionsInput = document.getElementById("sessions-before-long-break");
 
-function openModal() {
+function initSettingsModal() {
     loadSettings();
-    modal.style.display = "block";
+}
+
+function openModal() {
+    initSettingsModal();
+    modal.classList.add("open");
     document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
-    modal.style.display = "none";
+    modal.classList.remove("open");
     document.body.style.overflow = "";
 }
 
@@ -45,12 +47,7 @@ modal.addEventListener("click", (e) => {
     }
 });
 
-themeColorOptions.querySelectorAll(".color-square").forEach(sq => {
-    sq.addEventListener("click", () => {
-        themeColorOptions.querySelectorAll(".color-square").forEach(s => s.classList.remove("active"));
-        sq.classList.add("active");
-    });
-});
+
 
 function loadTimeInputs() {
     studyMinutes.value = TimerData.StudyMinutes;
@@ -78,14 +75,12 @@ function loadSettings() {
     fullScreen.checked = TimerData.FullScreenMode;
 
     themeColorOptions.querySelectorAll(".color-square").forEach(sq => {
-        sq.classList.toggle("active", sq.dataset.color === TimerData.SelectedColor);
+        sq.value = UserColors[sq.dataset.mode];
     });
 
-    tasksWidth.value = TimerData.TasksWidth;
-    tasksHeight.value = TimerData.TasksHeight;
     tasksTransparency.value = TimerData.TasksTransparency;
     circleVisibility.value = TimerData.CircleVisibility;
-    circleColor.value = TimerData.CircleColor;
+    circleColor.value = UserColors.Circle;
 }
 
 function saveSettings() {
@@ -93,16 +88,13 @@ function saveSettings() {
     TimerData.AutoStartTimer = autoStart.checked;
     TimerData.FullScreenMode = fullScreen.checked;
 
-    const activeColor = themeColorOptions.querySelector(".color-square.active");
-    if (activeColor) {
-        TimerData.SelectedColor = activeColor.dataset.color;
-    }
+    themeColorOptions.querySelectorAll(".color-square").forEach(sq => {
+        UserColors[sq.dataset.mode] = sq.value;
+    });
 
-    TimerData.TasksWidth = parseInt(tasksWidth.value) || 300;
-    TimerData.TasksHeight = parseInt(tasksHeight.value) || 400;
     TimerData.TasksTransparency = parseInt(tasksTransparency.value) || 100;
     TimerData.CircleVisibility = circleVisibility.value;
-    TimerData.CircleColor = circleColor.value;
+    UserColors.Circle = circleColor.value;
 }
 
 function applySettings() {
@@ -118,26 +110,25 @@ function applySettings() {
         }
     }
 
-    if (TimerData.SelectedColor) {
-        ChangePageColor(TimerData.SelectedColor);
-    }
-
     const circle = document.getElementById("timer-circle");
     if (circle) {
         circle.style.visibility = TimerData.CircleVisibility;
-        circle.style.stroke = TimerData.CircleColor;
+        circle.style.stroke = UserColors.Circle;
     }
 
     const activeNav = document.querySelector(".nav-button.active");
     if (activeNav) {
         let M, S;
         if (activeNav.id === "study-button") {
+            ChangePageColor(UserColors.Study);
             M = TimerData.StudyMinutes;
             S = TimerData.StudySeconds;
         } else if (activeNav.id === "short-break-button") {
+            ChangePageColor(UserColors.ShortBreak);
             M = TimerData.ShortBreakMinutes;
             S = TimerData.ShortBreakSeconds;
         } else {
+            ChangePageColor(UserColors.LongBreak);
             M = TimerData.LongBreakMinutes;
             S = TimerData.LongBreakSeconds;
         }
@@ -148,25 +139,12 @@ function applySettings() {
 }
 
 function resetSettings() {
-    TimerData.AutoStartTimer = false;
-    TimerData.FullScreenMode = false;
-    TimerData.SelectedColor = DefaultColors.Study;
-    TimerData.TasksWidth = 300;
-    TimerData.TasksHeight = 400;
-    TimerData.TasksTransparency = 100;
-    TimerData.CircleVisibility = "visible";
-    TimerData.CircleColor = DefaultColors.Study;
-    TimerData.StudyMinutes = 25;
-    TimerData.StudySeconds = 0;
-    TimerData.ShortBreakMinutes = 5;
-    TimerData.ShortBreakSeconds = 0;
-    TimerData.LongBreakMinutes = 15;
-    TimerData.LongBreakSeconds = 0;
-    TimerData.LongBreakInterval = 4;
+    Object.assign(TimerData, DefaultTimerData);
+    Object.assign(UserColors, DefaultColors);
     loadSettings();
 }
 
 applyButton.addEventListener("click", applySettings);
 resetButton.addEventListener("click", resetSettings);
 
-modal.style.display = "none";
+document.addEventListener("DOMContentLoaded", initSettingsModal);

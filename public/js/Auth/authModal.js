@@ -25,12 +25,12 @@ function showView(view) {
 
 function openModal() {
     showView(views.main);
-    modal.style.display = "flex";
+    modal.classList.add("open");
     document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
-    modal.style.display = "none";
+    modal.classList.remove("open");
     document.body.style.overflow = "";
 }
 
@@ -84,5 +84,3 @@ backSignup.addEventListener("click", () => showView(views.main));
 
 loginForm.addEventListener("submit", handleLoginSubmit);
 signupForm.addEventListener("submit", handleSignupSubmit);
-
-modal.style.display = "none";

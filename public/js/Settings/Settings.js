@@ -1,4 +1,4 @@
-﻿export let TimerData = {
+﻿export let DefaultTimerData = {
     StudyMinutes: 25,
     StudySeconds: 0,
     ShortBreakMinutes: 5,
@@ -9,16 +9,17 @@
     LongBreakInterval: 4,
     AutoStartTimer: false,
     FullScreenMode: false,
-    SelectedColor: "#4F8A5B",
-    TasksWidth: 300,
-    TasksHeight: 400,
     TasksTransparency: 100,
     CircleVisibility: "visible",
-    CircleColor: "#4F8A5B"
 };
+
+export let TimerData = { ...DefaultTimerData };
 
 export let DefaultColors = {
     Study: "#4F8A5B",
     ShortBreak: "#5C7FA3",
-    LongBreak: "#7B5D9A"
-}
+    LongBreak: "#7B5D9A",
+    Circle: "#F4DE87"
+};
+
+export let UserColors = { ...DefaultColors };      
