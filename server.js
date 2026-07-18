@@ -1,17 +1,9 @@
-import express from "express";
+const express = require("express");
 
 const app = express();
 
-app.use(express.static("."));
+app.use(express.static("public"));
 
-app.get("/api/hola", (req, res) => {
-    res.json({
-        mensaje: "Hola desde el servidor"
-    });
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log(`Servidor escuchando en el puerto ${PORT}`);
+app.listen(3000, () => {
+    console.log("Servidor iniciado");
 });
