@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Lisamuelpe/Adjustable-Pomodoro-Timer.git"
   },
   "license": "MIT",
-  "author": "",
-  "type": "module",
+  "author": "Lisandro Peña - (Lisamuelpe)",
+  "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
