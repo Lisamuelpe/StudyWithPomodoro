@@ -1,12 +1,11 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
 
-const server = express();
+export const server = express();
 
-server.use(express.static(path.join(__dirname, "public")));
+let desiredport = process.env.PORT || 3000;
 
 server.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.send("Hello World!");
 });
 
-module.exports = server;
+
