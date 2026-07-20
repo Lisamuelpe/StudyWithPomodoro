@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "author": "Lisandro Peña - (Lisamuelpe)",
-  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
